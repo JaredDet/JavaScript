@@ -1,4 +1,4 @@
-//Funciones
+//funciones
 
 /*
 En JavaScript, un objeto es definido como un JSON,

@@ -1,5 +1,5 @@
 /*
-    En JavaScript, un Array se define igual que en
+    En JavaScript, un array se define igual que en
     Java, pero la diferencia radica en que estos
     son dinámicos.
  */
