@@ -9,6 +9,7 @@
  */
 {
     const persona = {nombre: "Javier", edad: 21}
+    console.log(persona);
 }
 /*
     Un objeto a su vez podría contener otro objeto como atributo
@@ -27,6 +28,7 @@
             movil: "+569..."
         }
     };
+    console.log(persona);
 }
 
 /*
@@ -95,4 +97,50 @@
      */
 
     console.log(javier.hasOwnProperty("nombre"));
+
+    /*
+    Una técnica propia de JavaScript es la deconstrucción
+     */
+    {
+        let nombre = javier.nombre;
+        let apellido = javier.apellido;
+        let edad = javier.edad;
+        console.log(nombre, apellido, edad);
+        /*
+            Nota: en JS es necesario que la variable
+            tenga el mismo nombre que el atributo
+            Se reemplaza por
+         */
+        {
+            let {nombre, apellido, edad} = javier;
+            console.log(nombre, apellido, edad);
+        }
+    }
 }
+
+/*
+    Otra forma de definir un objeto es mediante los literales.
+    Si tenemos una variable con un valor asignado, y cuyo nombre
+    sea el mismo que el atributo del objeto, entonces se puede
+    definir el objeto del siguiente modo
+ */
+
+{
+    let nombre = "Juanín";
+    let apellido = "Beissinger";
+    let edad = 6;
+
+    juanin = {
+        nombre,
+        apellido,
+        edad,
+        ladrar(){
+            console.log("¡guau, guau, guau!");
+        }
+    };
+
+    console.log(juanin);
+    juanin.ladrar();
+}
+
+
