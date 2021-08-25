@@ -19,7 +19,7 @@
         nombre: "Javier",
         apellido: "Márquez",
         edad: 21,
-        pasatiempos: ["Hacer calistenia, aprender informática" +
+        pasatiempos: ["Hacer calistenia", "aprender informática",
         "y salir con amigos"],
         contacto: {
             email: "jamarquez145@gmail.com",
@@ -40,10 +40,15 @@
         edad: 21,
         saludar: function () {
             console.log(`Hola, me llamo ${this.nombre} ${this.apellido} y tengo ${this.edad} años.`)
+            return javier;
+        },
+        despedir: function () {
+            console.log("Adiós, cuídate");
         }
     };
 
-    javier.saludar();
+    javier.saludar()
+        .despedir()
 }
 
 /*
